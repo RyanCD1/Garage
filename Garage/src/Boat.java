@@ -19,4 +19,9 @@ public class Boat extends Vehicle {
 	public void setSails(int sails) {
 		this.sails = sails;
 	}
+
+	@Override
+	public double calcRepairCost() {
+		return (getPrice() * getSails());
+	}
 }

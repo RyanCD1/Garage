@@ -20,4 +20,9 @@ public class Car extends Vehicle {
 	public void setMake(String make) {
 		this.make = make;
 	}
+
+	@Override
+	public double calcRepairCost() {
+		return (getPrice() * getDoors());
+	}
 }

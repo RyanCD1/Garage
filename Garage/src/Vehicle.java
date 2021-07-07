@@ -61,6 +61,10 @@ public abstract class Vehicle {
 
 	}
 
+	public double calcRepairCost() {
+		return 100.0D;
+	}
+
 	public void setType(String type) {
 		this.type = type;
 	}

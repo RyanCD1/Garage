@@ -19,4 +19,9 @@ public class Motorbike extends Vehicle {
 	public void setSidecar(boolean sidecar) {
 		this.sidecar = sidecar;
 	}
+
+	@Override
+	public double calcRepairCost() {
+		return getPrice();
+	}
 }
